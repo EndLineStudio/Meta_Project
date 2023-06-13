@@ -1,0 +1,1 @@
+[assembly: Fusion.NetworkAssemblyIgnore]

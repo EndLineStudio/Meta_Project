@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6145574019439817280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6145574019439817283}
+  - component: {fileID: 6145574019439817282}
+  - component: {fileID: 6145574019439817285}
+  m_Layer: 0
+  m_Name: Grass
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6145574019439817283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6145574019439817280}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6145574019439817282
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6145574019439817280}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 90.1, y: 44.47, z: 85}
+  m_Center: {x: -14.4, y: -3.4, z: -25.4}
+--- !u!114 &6145574019439817285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6145574019439817280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae377035cff6e1449a53ff460b362826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bounds: {fileID: 6145574019439817282}
+  _configurations:
+  - IsEnabled: 1
+    Prefab: {fileID: 1361326889240672146, guid: 7c0ee751da34cb64c8a53e85599a0b97, type: 3}
+    Material: {fileID: 13400000, guid: 5df422a587123c442940c13b60af6338, type: 2}
+    Count: 125
+    MinScale: 0.5
+    MaxScale: 0.75
+    BorderRadius: 0.5
+    IgnoreRadius: 1
+  - IsEnabled: 1
+    Prefab: {fileID: 6046719921604690839, guid: b1957d374675d3045b2a3878173702c4, type: 3}
+    Material: {fileID: 13400000, guid: 5df422a587123c442940c13b60af6338, type: 2}
+    Count: 125
+    MinScale: 0.5
+    MaxScale: 0.75
+    BorderRadius: 0.5
+    IgnoreRadius: 1
+  - IsEnabled: 1
+    Prefab: {fileID: 2730478834202474117, guid: 10081a2192da26441b694970daab0a35, type: 3}
+    Material: {fileID: 13400000, guid: 5df422a587123c442940c13b60af6338, type: 2}
+    Count: 125
+    MinScale: 0.5
+    MaxScale: 0.75
+    BorderRadius: 0.5
+    IgnoreRadius: 1
+  - IsEnabled: 1
+    Prefab: {fileID: 7976409242787894724, guid: 3bc7a2344c5fac74fb886c8fe206ca9c, type: 3}
+    Material: {fileID: 13400000, guid: 5df422a587123c442940c13b60af6338, type: 2}
+    Count: 125
+    MinScale: 0.5
+    MaxScale: 0.75
+    BorderRadius: 0.5
+    IgnoreRadius: 1
+  _ignoreGroups: []
+  _clearOnSpawn: 1
+  _clear: 0
+  _spawn: 0

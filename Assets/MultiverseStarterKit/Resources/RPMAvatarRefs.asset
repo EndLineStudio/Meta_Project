@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c2399065e3b321469755f3ae4421ed8, type: 3}
+  m_Name: RPMAvatarRefs
+  m_EditorClassIdentifier: 
+  masculineAvatarObject: {fileID: 1124398245960057461, guid: 05a4b7f27862ded458acda41bc014f58, type: 3}
+  masculineAvatar: {fileID: 9000000, guid: e528800ce45094f4ab6c3a19c81989ff, type: 2}
+  feminineAvatarObject: {fileID: 6721977478947127424, guid: cb78b37e8771dcf45b5e69ad0fdc9840, type: 3}
+  feminineAvatar: {fileID: 9000000, guid: fe96e7baf555b8b40b0d1cdf7a0786d1, type: 2}

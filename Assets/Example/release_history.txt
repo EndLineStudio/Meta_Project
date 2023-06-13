@@ -1,0 +1,149 @@
+Photon Fusion KCC Example - Release History
+
+Version 1.1.13
+- Updated Fusion SDK to 1.1.5 F2 Build 643
+- Updated Fusion KCC Addon to 1.1.9
+
+Version 1.1.12
+- Added new testing scene - Village (runs on all platforms).
+- Added basic support for gamepad.
+- Added support for jump on mobile device with double tap.
+- Added quality settings (Low, Medium, High) for all platforms (PC, Mobile, VR).
+- Added SceneConfig with quality, post-postprocess, camera settings and refresh logic.
+- Added GameplayUI for in-game overlays (doesn't work in VR).
+- Added GravityKCCProcessor which modifies gravity.
+- Added Attractor - example KCC processor that attracts KCCs towards a target.
+- Added support for camera collisions with environment and smooth return.
+- Updated KinematicSpeedKCCProcessor to support adjusting speed based on physics material on colliders the KCC collides with.
+- Updated MovingPlatform to support delay on waypoints.
+- Updated Teleport to support multiple targets (random selection).
+- Fixed ProcessPhysicsQuery stages to correctly handle zero delta time.
+- Fixed layers on player prefabs.
+- Fixed menu buttons to work on mobile.
+- Cursor locking is now available only in standalone build and editor.
+- Spawned player instance is now set as player object (Runner.SetPlayerObject()).
+- Materials converted to URP/SimpleLit.
+- Third party assets cleanup.
+- Updated Readme file.
+- Updated Fusion SDK to 1.1.4-609
+- Updated Fusion KCC Addon to 1.1.8
+
+Version 1.1.11
+- Added options to change target frame rate, v-sync, input smoothing and fullscreen at runtime.
+- Default target frame rate for standalone set to 0 (unlimited).
+- Fixed input smoothing, default look responsivity set to 20ms (was 25ms).
+- Added utility for testing input smoothing.
+- Updated Fusion SDK to 1.1.4-604
+- Updated Fusion KCC Addon to 1.1.7
+
+Version 1.1.10
+- Updated Fusion SDK to 1.1.2-545
+- Updated Fusion KCC Addon to 1.1.6
+
+Version 1.1.9
+- Added Dash example.
+- Added SimpleMovementKCCProcessor - a simplified environment processor which doesn't suffer from error accumulation due to partial integration of render delta time.
+- Added detection of simulation instability after pausing/resuming app and dynamic adjustment of ignore input window (checking forward tick count and simulation render time).
+- Fixed Portal processor - now correctly teleports objects with high movement speed.
+- Fixed simulation of input ignore window.
+- Updated Fusion KCC Addon to 1.1.5
+
+Version 1.1.8
+- Updated Fusion SDK to 1.1.1-512
+- Downgrade of Mono Cecil to 1.10.2
+- Updated Oculus XR plugin.
+
+Version 1.1.7
+- Fixed VR menu and interactions.
+- Added readme with instructions.
+- Added max input repeat time (how long the last known input is repeated on state authority before using default).
+- Added time window to ignore input after app pause/resume.
+- Added option to log missing inputs.
+- Fixed Android build (removed Oculus XR loader from defaults).
+
+Version 1.1.6
+- Added support for VR (Oculus XR Plugin).
+- Added support for custom player config after joining a server.
+- Updated Fusion KCC Addon to 1.1.4
+- Updated Fusion SDK to 1.1.0-506
+- Updated packages.
+
+Version 1.1.5
+- Updated Fusion KCC Addon to 1.1.3
+- Updated project to Unity 2020.3.34f1
+- Updated packages.
+- Added EKCCStages.OnStay, EKCCStages.OnInterpolate and EKCCStages.ProcessUserLogic to GetValidStages() where needed (now required by KCC).
+
+Version 1.1.4
+- Updated Fusion KCC Addon to 1.1.2
+- Increased position and rotation accuracy on advanced player prefabs.
+- Added additional methods to PlayerInput for checking and storing manipulated input.
+- Added sanity checks to PlayerInput API (editor and development build only).
+
+Version 1.1.3
+- Updated Fusion KCC Addon to 1.1.1
+- Added Portal processor example.
+- Cleanup of JumpPad, Teleport, MovingPlatform (moved scripts, added prefabs).
+- Improved NetworkCulling to work with high ping.
+
+Version 1.1.2
+- Updated Fusion KCC Addon to 1.1.0
+- Default look rotation responsivity set to 0.025 (25ms).
+- Flipping look rotation direction now has instant responsivity.
+- Switched to manual update of input system.
+- Added custom input event system for correct update order.
+
+Version 1.1.1
+- Updated Fusion KCC Addon to 1.0.9
+- Updated project to Unity 2020.3.31f1, updated packages.
+- Switched input handling to Input System package.
+- Added InputTouches utility for processing mobile input through Input System package.
+- Added standalone and mobile look sensitivity to PlayerInput to control rotation speed.
+- Added optional look responsivity to PlayerInput - smoothing of mouse delta by calculating average from last X frames (defined by duration).
+
+Version 1.1.0
+- Updated PlayerInput to use IBeforeTick instead of ordered FUN.
+
+Version 1.0.9
+- Updated Fusion SDK to 1.0.0 F Build 439
+- Added NetworkAreaOfInterestProxy component for AoI compatible synchronization of NetworkObject without networked transform.
+- MovingPlatform and NetworkCulling are now ordered before NetworkAreaOfInterestBehaviour.
+- Fusion script execution order cleanup in Player related scripts.
+- Input refactoring - solved situations when input is lost for current frame. Instead last known input is used.
+- Important change - input actions are now backed by NetworkButtons and set with Input.GetKey(). Previous implementation used Input.GetKeyDown() which was not correct.
+
+Version 1.0.8
+- Moving platform now requires kinematic Rigidbody.
+- Fixed multiple KCC interactions on moving platform (position delta is now applied immediately before any KCC updates).
+- Updated Fusion KCC Addon to 1.0.8
+- Updated Fusion SDK to 0.13.0 RC Nightly Build 430
+
+Version 1.0.7
+- Compatibility with Fusion SDK 0.13.0 RC Nightly Build 423 (breaking changes).
+- Updated Fusion KCC Addon to 1.0.7
+
+Version 1.0.6
+- Added jump pads.
+- Updated Fusion KCC Addon to 1.0.6
+
+Version 1.0.5
+- Added moving platform.
+- Updated Fusion KCC Addon to 1.0.5
+- Updated Fusion SDK to 0.13.0 RC Nightly Build 413
+
+Version 1.0.4
+- Updated Fusion KCC Addon to 1.0.4
+
+Version 1.0.3
+- Fixed proxy culling to hide visual and KCC collider instead of disabling root GameObject when out of AoI.
+- All prefabs with NetworkObject marked as Spawnable.
+- Updated to Fusion SDK 0.13.0 RC Nightly Build 401
+
+Version 1.0.2
+- Added utility to bake terrain tree colliders.
+- Refactoring of testing CCs.
+- Fixed character spawn and network culling in Shared mode.
+- Removed mobile conversion kit.
+
+Version 1.0.0
+- Initial release.

@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8674666509381774077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8674666509381774074}
+  - component: {fileID: 8674666509381774072}
+  - component: {fileID: 8674666509381774075}
+  m_Layer: 0
+  m_Name: Flowers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8674666509381774074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8674666509381774077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8674666509381774072
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8674666509381774077}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 90.1, y: 44.47, z: 85}
+  m_Center: {x: -14.4, y: -3.4, z: -25.4}
+--- !u!114 &8674666509381774075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8674666509381774077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae377035cff6e1449a53ff460b362826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bounds: {fileID: 8674666509381774072}
+  _configurations:
+  - IsEnabled: 1
+    Prefab: {fileID: 5439051489448103474, guid: 63a6ed4e65ea52f4aa304e3f678282a6, type: 3}
+    Material: {fileID: 13400000, guid: 5df422a587123c442940c13b60af6338, type: 2}
+    Count: 100
+    MinScale: 0.5
+    MaxScale: 0.75
+    BorderRadius: 0.5
+    IgnoreRadius: 2
+  - IsEnabled: 1
+    Prefab: {fileID: 7225451284486989590, guid: c5a2715aa6611c14e82100ebc8f83f4f, type: 3}
+    Material: {fileID: 13400000, guid: 5df422a587123c442940c13b60af6338, type: 2}
+    Count: 100
+    MinScale: 0.5
+    MaxScale: 0.75
+    BorderRadius: 1
+    IgnoreRadius: 2
+  - IsEnabled: 1
+    Prefab: {fileID: 431248878728820024, guid: 097f36c664a545740be88f50b9a17ebb, type: 3}
+    Material: {fileID: 13400000, guid: 5df422a587123c442940c13b60af6338, type: 2}
+    Count: 100
+    MinScale: 0.5
+    MaxScale: 0.75
+    BorderRadius: 1
+    IgnoreRadius: 2
+  - IsEnabled: 1
+    Prefab: {fileID: 4515329347803295134, guid: 69793b89c6763e14780afdfb0412fcc1, type: 3}
+    Material: {fileID: 13400000, guid: 5df422a587123c442940c13b60af6338, type: 2}
+    Count: 100
+    MinScale: 0.5
+    MaxScale: 0.75
+    BorderRadius: 1
+    IgnoreRadius: 2
+  - IsEnabled: 1
+    Prefab: {fileID: 3026702881364209800, guid: dd2e8851865199e43b90d7b5b2bdf78f, type: 3}
+    Material: {fileID: 13400000, guid: 5df422a587123c442940c13b60af6338, type: 2}
+    Count: 100
+    MinScale: 0.5
+    MaxScale: 0.75
+    BorderRadius: 1
+    IgnoreRadius: 1
+  - IsEnabled: 1
+    Prefab: {fileID: 3086304920820411286, guid: 6805558f14ad44d4db4c98d7e4c43417, type: 3}
+    Material: {fileID: 13400000, guid: 5df422a587123c442940c13b60af6338, type: 2}
+    Count: 100
+    MinScale: 0.5
+    MaxScale: 0.75
+    BorderRadius: 1
+    IgnoreRadius: 2
+  _ignoreGroups: []
+  _clearOnSpawn: 1
+  _clear: 0
+  _spawn: 0
