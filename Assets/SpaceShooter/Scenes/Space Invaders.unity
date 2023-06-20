@@ -248,9 +248,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 409a9d82a9c33ad499f2630771328f7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverUI: {fileID: 0}
-  scoreText: {fileID: 0}
-  livesText: {fileID: 0}
+  gameOverUI: {fileID: 797358150}
+  scoreText: {fileID: 1984502043}
+  livesText: {fileID: 188796889}
 --- !u!1 &469048591
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,9 +570,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 643406835}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a0e2aa51f6856346b69542eb2a5f8d4, type: 3}
+  m_Script: {fileID: 11500000, guid: b26f070d6b81ce44ab1b46a413d735c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  splat: {fileID: 2800000, guid: a6a2d27059997af43b0160ed934f4eb2, type: 3}
 --- !u!1 &797358150
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,7 +702,7 @@ GameObject:
   m_Component:
   - component: {fileID: 962212319}
   - component: {fileID: 962212320}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: Invaders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -732,9 +733,44 @@ MonoBehaviour:
   m_GameObject: {fileID: 962212318}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df26ec918b6dca34dbfb862f22570b9e, type: 3}
+  m_Script: {fileID: 11500000, guid: d6008b5a2e4a79f468cc906c78a802f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 2844242282461464418, guid: 21f865cb325c39a42ae05fa853c24160, type: 3}
+  - {fileID: 2844242282461464418, guid: 21f865cb325c39a42ae05fa853c24160, type: 3}
+  - {fileID: 5735134454345823275, guid: 92725eb3a0283d641835e37afa65bda1, type: 3}
+  - {fileID: 5735134454345823275, guid: 92725eb3a0283d641835e37afa65bda1, type: 3}
+  - {fileID: 2651459514087703191, guid: 4a81c84ee7dea6d49a91f3fc916f3543, type: 3}
+  speed:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1.0129837
+      outSlope: 1.0129837
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 1
+    - serializedVersion: 3
+      time: 1
+      value: 7.9985046
+      inSlope: 13.8197155
+      outSlope: 13.8197155
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.046405733
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  rows: 5
+  columns: 11
+  missilePrefab: {fileID: 8329848488188630517, guid: 3c328e673b90a7f418f1f1e66f83522b,
+    type: 3}
+  missileSpawnRate: 1
 --- !u!1 &1001845995
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,9 +892,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1001845995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a0e2aa51f6856346b69542eb2a5f8d4, type: 3}
+  m_Script: {fileID: 11500000, guid: b26f070d6b81ce44ab1b46a413d735c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  splat: {fileID: 2800000, guid: a6a2d27059997af43b0160ed934f4eb2, type: 3}
 --- !u!1 &1154390489
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,8 +907,8 @@ GameObject:
   - component: {fileID: 1154390491}
   - component: {fileID: 1154390490}
   - component: {fileID: 1154390493}
-  - component: {fileID: 1154390492}
-  m_Layer: 9
+  - component: {fileID: 1154390494}
+  m_Layer: 7
   m_Name: MysteryShip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -945,18 +982,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1154390492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1154390489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc4508da8755a834b85393bfa1b44963, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1154390493
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -983,6 +1008,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1154390494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154390489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdb5376c06bf14e4fa8016f491bc700a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  cycleTime: 30
+  score: 300
 --- !u!1 &1294819297
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,9 +1364,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1613135759}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a0e2aa51f6856346b69542eb2a5f8d4, type: 3}
+  m_Script: {fileID: 11500000, guid: b26f070d6b81ce44ab1b46a413d735c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  splat: {fileID: 2800000, guid: a6a2d27059997af43b0160ed934f4eb2, type: 3}
 --- !u!1 &1639391297
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,7 +1381,7 @@ GameObject:
   - component: {fileID: 1639391301}
   - component: {fileID: 1639391300}
   - component: {fileID: 1639391302}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1470,9 +1511,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1639391297}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57279fa70d552234492ebb5dade22177, type: 3}
+  m_Script: {fileID: 11500000, guid: b0cf63c02cfdf9e48b269e1b944a705b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
+  laserPrefab: {fileID: 6561068921557331582, guid: 8cca1da190961a842b34231aade647ef,
+    type: 3}
 --- !u!1 &1660341574
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,9 +1638,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1660341574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a0e2aa51f6856346b69542eb2a5f8d4, type: 3}
+  m_Script: {fileID: 11500000, guid: b26f070d6b81ce44ab1b46a413d735c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  splat: {fileID: 2800000, guid: a6a2d27059997af43b0160ed934f4eb2, type: 3}
 --- !u!1 &1984502041
 GameObject:
   m_ObjectHideFlags: 0
