@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace SpaceShooter
 {
@@ -13,6 +14,8 @@ namespace SpaceShooter
         public GameObject gameOverUI;
         public Text scoreText;
         public Text livesText;
+
+        public string MainGameLevel;
 
         public int score { get; private set; }
         public int lives { get; private set; }
@@ -40,6 +43,17 @@ namespace SpaceShooter
             {
                 NewGame();
             }
+
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                NewGame();
+                UpdateLevel();
+            }
+        }
+
+        private void UpdateLevel()
+        {
+            LevelManager.Intance.MainScene.Invoke();
         }
 
         private void NewGame()

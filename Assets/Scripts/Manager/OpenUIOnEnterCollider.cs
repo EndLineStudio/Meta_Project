@@ -1,9 +1,9 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OpenUIOnEnterCollider : MonoBehaviour
 {
     public GameObject colliderUIPanel;
-    public GameObject spaceShooterUIPanel;
 
     private bool isPlayerInsideCollider = false;
 
@@ -22,7 +22,7 @@ public class OpenUIOnEnterCollider : MonoBehaviour
         {
             isPlayerInsideCollider = false;
             colliderUIPanel.SetActive(false);
-            spaceShooterUIPanel.SetActive(false);
+            // spaceShooterUIPanel.SetActive(false);
         }
     }
 
@@ -36,7 +36,7 @@ public class OpenUIOnEnterCollider : MonoBehaviour
 
     private void OpenSpaceShooterUI()
     {
-        colliderUIPanel.SetActive(false);
-        spaceShooterUIPanel.SetActive(true);
+        LevelManager.Intance.SpaceShooterScene.Invoke();
+        // spaceShooterUIPanel.SetActive(true);
     }
 }
