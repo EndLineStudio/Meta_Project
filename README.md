@@ -1,4 +1,4 @@
-# Meta_Project With Sci-Fi Inveroment.
+# Meta_Project With Sci-Fi Environment.
 
 <h3 align="left">Game Feathers:</h3>
 
